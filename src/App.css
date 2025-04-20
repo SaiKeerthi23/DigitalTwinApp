@@ -1,38 +1,161 @@
-.App {
+nav ul li button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul li button:hover {
+  background-color: #d32f2f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-dashboard button,
+.approver-dashboard button {
+  background-color: #2876f5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0; /* Changed margin for better spacing */
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-dashboard button:hover,
+.approver-dashboard button:hover {
+  background-color: #4CAF50;
+}
+
+/* Add any other necessary CSS rules here */
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ccccff; /* Add background color for entire app */
+  min-height: 100vh; /* Ensure the background covers the whole viewport */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(162, 113, 254);
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.home,
+.register,
+.user-dashboard,
+.approver-dashboard,
+.file-upload,
+.file-list,
+.update-file-hash,
+.request-update,
+.request-consent,
+.approve-consent,
+.reject-consent,
+.notification-list {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white; /* add background color to containers */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input,
+select,
+button {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.account-display {
+  padding: 10px;
+  background-color: #f7e56e;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 80vh;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.home h1 {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home p {
+  margin-bottom: 20px;
 }
